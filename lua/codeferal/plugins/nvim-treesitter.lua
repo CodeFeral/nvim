@@ -20,8 +20,6 @@ return {
         "javascript",
         "typescript",
         "tsx",
-        "markdown",
-        "markdown_inline",
       },
 
       sync_install = false,
