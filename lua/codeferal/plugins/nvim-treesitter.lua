@@ -8,7 +8,7 @@ return {
 
   build = ":TSUpdate",
 
-  config = function () 
+  config = function()
     local configs = require("nvim-treesitter.configs")
 
     configs.setup({
@@ -30,8 +30,8 @@ return {
 
       indent = {
         enable = true
-      },  
+      },
 
     })
   end
- }
+}
