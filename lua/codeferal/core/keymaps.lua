@@ -20,6 +20,6 @@ vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current bu
 
 -- Neo-tree
 vim.keymap.set("n", "<leader>fe", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "Neotree open" })
-vim.keymap.set("n", "<leader>ff", "<cmd>Neotree float reveal<CR>", { desc = "Neotree float open" })
+vim.keymap.set("n", "<leader>ff", "<cmd>Neotree toggle float reveal<CR>", { desc = "Neotree float open" })
 vim.keymap.set("n", "<leader>fx", "<cmd>Neotree close<CR>", { desc = "Neotree close" })
 vim.keymap.set("n", "<leader>fg", "<cmd>Neotree git_status toggle float<CR>", { desc = "Neotree git status" })
