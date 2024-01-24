@@ -29,8 +29,9 @@ vim.keymap.set({ "n", "v" }, "<leader>tl", "<cmd>tabn<CR>", { desc = "go to next
 vim.keymap.set({ "n", "v" }, "<leader>tt", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" })
 
 -- Plugins GUI
-vim.keymap.set({ "n", "v" }, "<leader>pl", "<cmd>Lazy<CR>", { desc = "open Lazy" })
-vim.keymap.set({ "n", "v" }, "<leader>pm", "<cmd>Mason<CR>", { desc = "open Mason" })
+vim.keymap.set({ "n", "v" }, "<leader>pl", "<cmd>Lazy<CR>", { desc = "Lazy" })
+vim.keymap.set({ "n", "v" }, "<leader>pm", "<cmd>Mason<CR>", { desc = "Mason" })
+vim.keymap.set({ "n", "v" }, "<leader>pd", "<cmd>Dashboard<CR>", { desc = "Dashboard" })
 
 -- LSP
 vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "action" })
