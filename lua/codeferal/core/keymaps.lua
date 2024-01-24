@@ -5,6 +5,10 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<ESC>", { desc = "exit insert mode with jk" })
 vim.keymap.set("i", "kj", "<ESC>", { desc = "exit insert mode with kj" })
 
+-- terminal
+vim.api.nvim_set_keymap("t", "<C-Space>", "<C-\\><C-n>", { noremap = true })
+vim.keymap.set({ "n", "v" }, "<leader>t", "<cmd>terminal<CR>", { desc = "open terminal" })
+
 -- window splits
 vim.keymap.set({ "n", "v" }, "<leader>ws", "<C-w>s", { desc = "split window horizontally" })
 vim.keymap.set({ "n", "v" }, "<leader>wv", "<C-w>v", { desc = "split window vertically" })
@@ -20,13 +24,6 @@ vim.keymap.set({ "n", "v" }, "<leader>wh", "<C-w>h", { desc = "go to left split 
 vim.keymap.set({ "n", "v" }, "<leader>wj", "<C-w>j", { desc = "go to down split" })
 vim.keymap.set({ "n", "v" }, "<leader>wk", "<C-w>k", { desc = "go to up split" })
 vim.keymap.set({ "n", "v" }, "<leader>wl", "<C-w>l", { desc = "go to right split" })
-
--- tabs
-vim.keymap.set({ "n", "v" }, "<leader>to", "<cmd>tabnew<CR>", { desc = "open new tab" })
-vim.keymap.set({ "n", "v" }, "<leader>tx", "<cmd>tabclose<CR>", { desc = "close current tab" })
-vim.keymap.set({ "n", "v" }, "<leader>th", "<cmd>tabp<CR>", { desc = "go to previous tab" })
-vim.keymap.set({ "n", "v" }, "<leader>tl", "<cmd>tabn<CR>", { desc = "go to next tab" })
-vim.keymap.set({ "n", "v" }, "<leader>tt", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" })
 
 -- LSP
 vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "action" })
@@ -52,3 +49,11 @@ vim.keymap.set({ "n", "v" }, "<leader>eg", "<cmd>Neotree git_status toggle float
 vim.keymap.set({ "n", "v" }, "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
 vim.keymap.set({ "n", "v" }, "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 vim.keymap.set({ "n", "v" }, "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+
+-- Git
+vim.keymap.set({ "n", "v" }, "<leader>gs", "<cmd>git<cr>", { desc = "Git status" })
+vim.keymap.set({ "n", "v" }, "<leader>gc", "<cmd>Git commit<cr>", { desc = "Git commit" })
+vim.keymap.set({ "n", "v" }, "<leader>gp", "<cmd>Git push<cr>", { desc = "Git push" })
+vim.keymap.set({ "n", "v" }, "<leader>gl", "<cmd>Git pull<cr>", { desc = "Git pull" })
+vim.keymap.set({ "n", "v" }, "<leader>gb", "<cmd>Git blame<cr>", { desc = "Git blame" })
+vim.keymap.set({ "n", "v" }, "<leader>gd", "<cmd>Git diff<cr>", { desc = "Git diff" })
