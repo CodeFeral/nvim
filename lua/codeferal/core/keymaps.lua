@@ -28,21 +28,19 @@ vim.keymap.set({ "n", "v" }, "<leader>th", "<cmd>tabp<CR>", { desc = "go to prev
 vim.keymap.set({ "n", "v" }, "<leader>tl", "<cmd>tabn<CR>", { desc = "go to next tab" })
 vim.keymap.set({ "n", "v" }, "<leader>tt", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" })
 
--- Plugins GUI
-vim.keymap.set({ "n", "v" }, "<leader>pl", "<cmd>Lazy<CR>", { desc = "Lazy" })
-vim.keymap.set({ "n", "v" }, "<leader>pm", "<cmd>Mason<CR>", { desc = "Mason" })
-vim.keymap.set({ "n", "v" }, "<leader>pd", "<cmd>Dashboard<CR>", { desc = "Dashboard" })
-
 -- LSP
 vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "action" })
 vim.keymap.set({ "n", "v" }, "<leader>ll", vim.lsp.buf.hover, { desc = "look" })
 vim.keymap.set({ "n", "v" }, "<leader>ld", vim.lsp.buf.definition, { desc = "definition" })
 vim.keymap.set({ "n", "v" }, "<leader>lD", vim.lsp.buf.declaration, { desc = "declaration" })
 vim.keymap.set({ "n", "v" }, "<leader>li", vim.lsp.buf.implementation, { desc = "implementation" })
-vim.keymap.set({ "n", "v" }, "<leader>lr", vim.lsp.buf.rename, { desc = "rename" })
+vim.keymap.set({ "n", "v" }, "<leader>lrn", vim.lsp.buf.rename, { desc = "rename" })
+vim.keymap.set({ "n", "v" }, "<leader>lrs", "<cmd>LspRestart<CR>", { desc = "restart" })
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
 	vim.lsp.buf.format({ async = true })
 end, { desc = "format" })
+
+-- Completion & Snippet popup mappings inside completions.lua
 
 -- Neo-tree
 vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
