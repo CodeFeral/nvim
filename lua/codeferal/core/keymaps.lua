@@ -34,10 +34,11 @@ vim.keymap.set({ "n", "v" }, "<leader>li", vim.lsp.buf.implementation, { desc = 
 vim.keymap.set({ "n", "v" }, "<leader>lrn", vim.lsp.buf.rename, { desc = "rename" })
 vim.keymap.set({ "n", "v" }, "<leader>lrs", "<cmd>LspRestart<CR>", { desc = "restart" })
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
-	vim.lsp.buf.format({ async = true })
+  vim.lsp.buf.format({ async = true })
 end, { desc = "format" })
 
--- Completion & Snippet popup mappings inside completions.lua
+-- Completion
+-- mappings inside completions.lua
 
 -- Neo-tree
 vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
