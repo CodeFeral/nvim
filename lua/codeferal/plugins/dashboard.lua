@@ -26,203 +26,203 @@ return {
 
 			local quotes = {
 				{
-					" Clarity is King.",
+					"Clarity is King.",
 					"- unknown -",
 				},
 				{
-					" Play is the highest form of research.",
+					"Play is the highest form of research.",
 					"- Albert Einstein -",
 				},
 				{
-					" You don't become enlightened by imagining figures of light, but by making the darkness conscious.",
+					"You don't become enlightened by imagining figures of light, but by making the darkness conscious.",
 					"- Carl Jung -",
 				},
 				{
-					" Pain is inevitable. Suffering is optional.",
+					"Pain is inevitable. Suffering is optional.",
 					"- Haruki Murakami -",
 				},
 				{
-					" The strength of a person's spirit is measured by how much truth he could tolerate, or more precisely, to what extent he needs to have it diluted, disguised, sweetened, muted, falsified.",
+					"The strength of a person's spirit is measured by how much truth he could tolerate, or more precisely, to what extent he needs to have it diluted, disguised, sweetened, muted, falsified.",
 					"- Friedrich Nietzsche -",
 				},
 				{
-					" Those who say it cannot be done should not interrupt the ones doing it.",
+					"Those who say it cannot be done should not interrupt the ones doing it.",
 					"- unknown -",
 				},
 				{
-					" We only see what we know.",
+					"We only see what we know.",
 					"- Goethe -",
 				},
 				{
-					" Whether you think you can or think you can't, you're right.",
+					"Whether you think you can or think you can't, you're right.",
 					"- Henry Ford -",
 				},
 				{
-					" Live as if you were to die tomorrow. Learn as if you were to live forever.",
+					"Live as if you were to die tomorrow. Learn as if you were to live forever.",
 					"- Mahatma Gandhi -",
 				},
 				{
-					" If you wish to make an apple pie from scratch, you must first invent the universe.",
+					"If you wish to make an apple pie from scratch, you must first invent the universe.",
 					"- Carl Sagan -",
 				},
 				{
-					" Man is quite insane. He wouldn't know how to create a maggot, and yet he creates Gods by the dozen.",
+					"Man is quite insane. He wouldn't know how to create a maggot, and yet he creates Gods by the dozen.",
 					"- Michel de Montaigne -",
 				},
 				{
-					" Earth provides enough to satisfy every man's need, but not every man's greed.",
+					"Earth provides enough to satisfy every man's need, but not every man's greed.",
 					"- Mahatma Gandhi -",
 				},
 				{
-					" We may encounter many defeats, but we must not be defeated.",
+					"We may encounter many defeats, but we must not be defeated.",
 					"- Maya Angelou -",
 				},
 				{
-					" If it costs you your peace, then it's too expensive.",
+					"If it costs you your peace, then it's too expensive.",
 					"- unknown -",
 				},
 				{
-					" The path to paradise begins in hell.",
+					"The path to paradise begins in hell.",
 					"- Dante -",
 				},
 				{
-					" The reasonable man adapts himself to the word. The unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.",
+					"The reasonable man adapts himself to the word. The unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.",
 					"- George Bernard Shaw -",
 				},
 				{
-					" Judge a man by his questions rather than by his answers.",
+					"Judge a man by his questions rather than by his answers.",
 					"- unknown -",
 				},
 				{
-					" I may disagree with what you have to say, but I shall defend, to the death, your right to say it.",
+					"I may disagree with what you have to say, but I shall defend, to the death, your right to say it.",
 					"- Voltaire -",
 				},
 				{
-					" Doubt is not a pleasant condition, but certainty is absurd.",
+					"Doubt is not a pleasant condition, but certainty is absurd.",
 					"- Voltaire -",
 				},
 				{
-					" God is a comedian, playing to an audience too afraid to laugh.",
+					"God is a comedian, playing to an audience too afraid to laugh.",
 					"- Voltaire -",
 				},
 				{
-					" To learn who rules over you, simply find out who you are not allowed to criticize.",
+					"To learn who rules over you, simply find out who you are not allowed to criticize.",
 					"- Voltaire -",
 				},
 				{
-					" Strength does not come from physical capacity. It comes from an indomitable will.",
+					"Strength does not come from physical capacity. It comes from an indomitable will.",
 					"- Mahatma Gandhi -",
 				},
 				{
-					" Ever tried, ever failed. No matter. Try again, fail again. Fail better.",
+					"Ever tried, ever failed. No matter. Try again, fail again. Fail better.",
 					"- Samuel Beckett -",
 				},
 				{
-					" The harder I practice, the luckier I get.",
+					"The harder I practice, the luckier I get.",
 					"- unknown -",
 				},
 				{
-					" Fear he who fears nothing.",
+					"Fear he who fears nothing.",
 					"- Terrorblade -",
 				},
 				{
-					" A man chooses, a slave obeys.",
+					"A man chooses, a slave obeys.",
 					"- Andrew Ryan -",
 				},
 				{
-					" We all make choices, but in the end our choices make us.",
+					"We all make choices, but in the end our choices make us.",
 					"- Andrew Ryan -",
 				},
 				{
-					" The great achievements of man have come from those who dared to believe that something inside them was superior to circumstances.",
+					"The great achievements of man have come from those who dared to believe that something inside them was superior to circumstances.",
 					"- Andrew Ryan -",
 				},
 				{
-					" The impossible becomes possible, the possible becomes probable, the probable becomes inevitable.",
+					"The impossible becomes possible, the possible becomes probable, the probable becomes inevitable.",
 					"- Andrew Ryan -",
 				},
 				{
-					" The price of Liberty is eternal vigilance.",
+					"The price of Liberty is eternal vigilance.",
 					"- Thomas Jefferson -",
 				},
 				{
-					" The question is not what you look at, but what you see.",
+					"The question is not what you look at, but what you see.",
 					"- Henry David Thoreau -",
 				},
 				{
-					" The only way to do great work is to love what you do.",
+					"The only way to do great work is to love what you do.",
 					"- Steve Jobs -",
 				},
 				{
-					" Curiosity will conquer fear even more than bravery will.",
+					"Curiosity will conquer fear even more than bravery will.",
 					"- James Stephens -",
 				},
 				{
-					" The true sign of intelligence is not knowledge but imagination.",
+					"The true sign of intelligence is not knowledge but imagination.",
 					"- Albert Einstein -",
 				},
 				{
-					" He who dares not offend cannot be honest.",
+					"He who dares not offend cannot be honest.",
 					"- Thomas Paine -",
 				},
 				{
-					" As a human being one has been endowed with just enough intelligence to be able to see clearly how utterly inadequate that intelligence is when confronted with what exists.",
+					"As a human being one has been endowed with just enough intelligence to be able to see clearly how utterly inadequate that intelligence is when confronted with what exists.",
 					"- Albert Einstein -",
 				},
 				{
-					" In a mad world, only the mad are sane.",
+					"In a mad world, only the mad are sane.",
 					"- Akira Kurosawa -",
 				},
 				{
-					" Man cannot remake himself without suffering, for he is both the marble and the sculptor.",
+					"Man cannot remake himself without suffering, for he is both the marble and the sculptor.",
 					"- Alexis Carrel -",
 				},
 				{
-					" Beware of unearned wisdom.",
+					"Beware of unearned wisdom.",
 					"- Carl Jung -",
 				},
 				{
-					" The ultimate test of your knowledge is your ability to convey it to others.",
+					"The ultimate test of your knowledge is your ability to convey it to others.",
 					"- Richard Feynman -",
 				},
 				{
-					" There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.",
+					"There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.",
 					"- Miyamoto Musashi -",
 				},
 				{
-					" You must understand that there is more than one path to the top of the mountain.",
+					"You must understand that there is more than one path to the top of the mountain.",
 					"- Miyamoto Musashi -",
 				},
 				{
-					" The true science of martial arts means practicing them in such a way that they will be useful at any time, and to teach them in such a way that they will be useful in all things.",
+					"The true science of martial arts means practicing them in such a way that they will be useful at any time, and to teach them in such a way that they will be useful in all things.",
 					"- Miyamoto Musashi -",
 				},
 				{
-					" All man are the same except for their belief in their own selves, regardless of what others may think of them.",
+					"All man are the same except for their belief in their own selves, regardless of what others may think of them.",
 					"- Miyamoto Musashi -",
 				},
 				{
-					" Nothing that is truly for you will require you to act out of character to get it.",
+					"Nothing that is truly for you will require you to act out of character to get it.",
 					"- unknown -",
 				},
 				{
-					" Truth is not what you want it to be, it is what it is, and you must bend to its power or live a lie.",
+					"Truth is not what you want it to be, it is what it is, and you must bend to its power or live a lie.",
 					"- Miyamoto Musashi -",
 				},
 				{
-					" If to correct you must humiliate, you don't know how to teach.",
+					"If to correct you must humiliate, you don't know how to teach.",
 					"- unknown -",
 				},
 				{
-					" Hesitation is defeat.",
+					"Hesitation is defeat.",
 					"- Isshin Ashina -",
 				},
 				{
-					" It's the truth I'm after, and the truth never harmed anyone. What harms us is to persist in self-deceit and ignorance.",
+					"It's the truth I'm after, and the truth never harmed anyone. What harms us is to persist in self-deceit and ignorance.",
 					"- Marcus Aurelius -",
 				},
 				{
-					" Those who lack the courage will always find a philosophy to justify it.",
+					"Those who lack the courage will always find a philosophy to justify it.",
 					"- Albert Camus -",
 				},
 			}
