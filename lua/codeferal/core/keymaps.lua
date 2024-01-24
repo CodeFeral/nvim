@@ -45,8 +45,8 @@ vim.keymap.set({ "n", "v" }, "<leader>lf", function()
 end, { desc = "format" })
 
 -- Neo-tree
-vim.keymap.set({ "n", "v" }, "<leader>ee", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
-vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree float reveal<CR>", { desc = "neotree float open" })
+vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
+vim.keymap.set({ "n", "v" }, "<leader>ee", "<cmd>Neotree float reveal<CR>", { desc = "neotree float open" })
 vim.keymap.set({ "n", "v" }, "<leader>ex", "<cmd>Neotree close<CR>", { desc = "neotree close" })
 vim.keymap.set({ "n", "v" }, "<leader>eg", "<cmd>Neotree git_status toggle float<CR>", { desc = "neotree git status" })
 
