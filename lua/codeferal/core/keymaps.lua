@@ -60,7 +60,7 @@ vim.keymap.set({ "n", "v" }, "<leader>aX", "<cmd>AerialCloseAll<CR>", { desc = "
 
 -- Workspace
 local function openWorkspace()
-	vim.cmd("Neotree filesystem left show")
+	vim.cmd("Neotree filesystem left show reveal")
 
   vim.defer_fn(function()
     vim.cmd("AerialOpen! left")
