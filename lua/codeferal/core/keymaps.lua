@@ -34,11 +34,17 @@ vim.keymap.set({ "n", "v" }, "<leader>li", vim.lsp.buf.implementation, { desc = 
 vim.keymap.set({ "n", "v" }, "<leader>lrn", vim.lsp.buf.rename, { desc = "rename" })
 vim.keymap.set({ "n", "v" }, "<leader>lrs", "<cmd>LspRestart<CR>", { desc = "restart" })
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
-  vim.lsp.buf.format({ async = true })
+	vim.lsp.buf.format({ async = true })
 end, { desc = "format" })
 
 -- Completion
 -- mappings inside completions.lua
+
+-- Telescope
+vim.keymap.set({ "n", "v" }, "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope files" })
+vim.keymap.set({ "n", "v" }, "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "telescope recent files" })
+vim.keymap.set({ "n", "v" }, "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "telescope string" })
+vim.keymap.set({ "n", "v" }, "<leader>fn", "<cmd>Telescope notify<cr>", { desc = "telescope notifications" })
 
 -- Neo-tree
 vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
@@ -46,15 +52,28 @@ vim.keymap.set({ "n", "v" }, "<leader>ee", "<cmd>Neotree float reveal<CR>", { de
 vim.keymap.set({ "n", "v" }, "<leader>ex", "<cmd>Neotree close<CR>", { desc = "neotree close" })
 vim.keymap.set({ "n", "v" }, "<leader>eg", "<cmd>Neotree git_status toggle float<CR>", { desc = "neotree git status" })
 
--- Telescope
-vim.keymap.set({ "n", "v" }, "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-vim.keymap.set({ "n", "v" }, "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-vim.keymap.set({ "n", "v" }, "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+-- Aerial
+vim.keymap.set({ "n", "v" }, "<leader>aw", "<cmd>AerialOpen! left<CR>", { desc = "aerial open" })
+vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>AerialNavToggle<CR>", { desc = "aerial float" })
+vim.keymap.set({ "n", "v" }, "<leader>ax", "<cmd>AerialClose<CR>", { desc = "aerial close" })
+vim.keymap.set({ "n", "v" }, "<leader>aX", "<cmd>AerialCloseAll<CR>", { desc = "aerial close all" })
 
--- Git
-vim.keymap.set({ "n", "v" }, "<leader>gs", "<cmd>git<cr>", { desc = "Git status" })
-vim.keymap.set({ "n", "v" }, "<leader>gc", "<cmd>Git commit<cr>", { desc = "Git commit" })
-vim.keymap.set({ "n", "v" }, "<leader>gp", "<cmd>Git push<cr>", { desc = "Git push" })
-vim.keymap.set({ "n", "v" }, "<leader>gl", "<cmd>Git pull<cr>", { desc = "Git pull" })
-vim.keymap.set({ "n", "v" }, "<leader>gb", "<cmd>Git blame<cr>", { desc = "Git blame" })
-vim.keymap.set({ "n", "v" }, "<leader>gd", "<cmd>Git diff<cr>", { desc = "Git diff" })
+-- Workspace
+local function openWorkspace()
+	vim.cmd("Neotree filesystem left show")
+
+  vim.defer_fn(function()
+    vim.cmd("AerialOpen! left")
+  end, 100)
+end
+
+local function closeWorkspace()
+  vim.cmd("Neotree close")
+
+  vim.defer_fn(function()
+    vim.cmd("AerialCloseAll")
+  end, 100)
+end
+
+vim.keymap.set({ "n", "v" }, "<leader>zz", openWorkspace, { desc = "workspace open" })
+vim.keymap.set({ "n", "v" }, "<leader>zx", closeWorkspace, { desc = "workspace close" })
