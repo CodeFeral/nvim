@@ -13,5 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { import = "codeferal.plugins" },
+  { import = "codeferal.plugins.treesitter" },
+  { import = "codeferal.plugins.navigation" },
   { import = "codeferal.plugins.lsp" },
 })

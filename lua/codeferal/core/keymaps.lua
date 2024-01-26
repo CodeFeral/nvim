@@ -39,7 +39,7 @@ vim.keymap.set({ "n", "v" }, "<leader>lr", vim.lsp.buf.rename, { desc = "rename"
 vim.keymap.set({ "n", "v" }, "<leader>le", vim.lsp.buf.references, { desc = "references" })
 vim.keymap.set({ "n", "v" }, "<leader>ls", "<cmd>LspRestart<CR>", { desc = "restart" })
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
-  vim.lsp.buf.format({ async = true })
+	vim.lsp.buf.format({ async = true })
 end, { desc = "format" })
 
 -- Completion
@@ -72,17 +72,17 @@ vim.keymap.set({ "n", "v" }, "<leader>cs", "<cmd>Copilot status<CR>", { desc = "
 
 -- Workspace
 local function openWorkspace()
-  vim.cmd("Neotree filesystem left show reveal")
-  vim.defer_fn(function()
-    vim.cmd("AerialOpen! left")
-  end, 100)
+	vim.cmd("Neotree filesystem left show reveal")
+	vim.defer_fn(function()
+		vim.cmd("AerialOpen! left")
+	end, 100)
 end
 
 local function closeWorkspace()
-  vim.cmd("Neotree close")
-  vim.defer_fn(function()
-    vim.cmd("AerialCloseAll")
-  end, 100)
+	vim.cmd("Neotree close")
+	vim.defer_fn(function()
+		vim.cmd("AerialCloseAll")
+	end, 100)
 end
 
 vim.keymap.set({ "n", "v" }, "<leader>zz", openWorkspace, { desc = "workspace open" })
