@@ -34,7 +34,7 @@ vim.keymap.set({ "n", "v" }, "<leader>li", vim.lsp.buf.implementation, { desc = 
 vim.keymap.set({ "n", "v" }, "<leader>lrn", vim.lsp.buf.rename, { desc = "rename" })
 vim.keymap.set({ "n", "v" }, "<leader>lrs", "<cmd>LspRestart<CR>", { desc = "restart" })
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
-	vim.lsp.buf.format({ async = true })
+  vim.lsp.buf.format({ async = true })
 end, { desc = "format" })
 
 -- Completion
@@ -58,10 +58,16 @@ vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>AerialNavToggle<CR>", { desc = 
 vim.keymap.set({ "n", "v" }, "<leader>ax", "<cmd>AerialClose<CR>", { desc = "aerial close" })
 vim.keymap.set({ "n", "v" }, "<leader>aX", "<cmd>AerialCloseAll<CR>", { desc = "aerial close all" })
 
+-- Copilot
+vim.keymap.set({ "n", "v" }, "<leader>cc", "<cmd>Copilot<CR>", { desc = "copilot" })
+vim.keymap.set({ "n", "v" }, "<leader>ch", "<cmd>h Copilot<CR>", { desc = "copilot help" })
+vim.keymap.set({ "n", "v" }, "<leader>ce", "<cmd>Copilot enable<CR>", { desc = "copilot enable" })
+vim.keymap.set({ "n", "v" }, "<leader>cx", "<cmd>Copilot disable<CR>", { desc = "copilot disable" })
+vim.keymap.set({ "n", "v" }, "<leader>cs", "<cmd>Copilot status<CR>", { desc = "copilot status" })
+
 -- Workspace
 local function openWorkspace()
-	vim.cmd("Neotree filesystem left show reveal")
-
+  vim.cmd("Neotree filesystem left show reveal")
   vim.defer_fn(function()
     vim.cmd("AerialOpen! left")
   end, 100)
@@ -69,7 +75,6 @@ end
 
 local function closeWorkspace()
   vim.cmd("Neotree close")
-
   vim.defer_fn(function()
     vim.cmd("AerialCloseAll")
   end, 100)
