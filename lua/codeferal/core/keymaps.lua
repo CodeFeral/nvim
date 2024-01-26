@@ -5,6 +5,10 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<ESC>", { desc = "exit insert mode with jk" })
 vim.keymap.set("i", "kj", "<ESC>", { desc = "exit insert mode with kj" })
 
+-- Swap Ctrl-i and Ctrl-o
+vim.api.nvim_set_keymap("n", "<C-o>", "<C-i>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-i>", "<C-o>", { noremap = true, silent = true })
+
 -- terminal
 vim.api.nvim_set_keymap("t", "<C-Space>", "<C-\\><C-n>", { noremap = true })
 vim.keymap.set({ "n", "v" }, "<leader>t", "<cmd>terminal<CR>", { desc = "open terminal" })
@@ -14,11 +18,11 @@ vim.keymap.set({ "n", "v" }, "<leader>ws", "<C-w>s", { desc = "split window hori
 vim.keymap.set({ "n", "v" }, "<leader>wv", "<C-w>v", { desc = "split window vertically" })
 vim.keymap.set({ "n", "v" }, "<leader>wx", "<cmd>close<CR>", { desc = "close current split" })
 
-vim.keymap.set({ "n", "v" }, "<leader>wwh", "2<C-w><", { desc = "decrease width" })
-vim.keymap.set({ "n", "v" }, "<leader>wwj", "2<C-w>-", { desc = "decrease height" })
-vim.keymap.set({ "n", "v" }, "<leader>wwk", "2<C-w>+", { desc = "increase height" })
-vim.keymap.set({ "n", "v" }, "<leader>wwl", "2<C-w>>", { desc = "increase width" })
-vim.keymap.set({ "n", "v" }, "<leader>wwe", "2<C-w>=", { desc = "equal size" })
+vim.keymap.set({ "n", "v" }, "<leader>wwh", "<C-w><", { desc = "decrease width" })
+vim.keymap.set({ "n", "v" }, "<leader>wwj", "<C-w>-", { desc = "decrease height" })
+vim.keymap.set({ "n", "v" }, "<leader>wwk", "<C-w>+", { desc = "increase height" })
+vim.keymap.set({ "n", "v" }, "<leader>wwl", "<C-w>>", { desc = "increase width" })
+vim.keymap.set({ "n", "v" }, "<leader>wwe", "<C-w>=", { desc = "equal size" })
 
 vim.keymap.set({ "n", "v" }, "<leader>wh", "<C-w>h", { desc = "go to left split " })
 vim.keymap.set({ "n", "v" }, "<leader>wj", "<C-w>j", { desc = "go to down split" })
@@ -34,7 +38,9 @@ vim.keymap.set({ "n", "v" }, "<leader>li", vim.lsp.buf.implementation, { desc = 
 vim.keymap.set({ "n", "v" }, "<leader>lr", vim.lsp.buf.rename, { desc = "rename" })
 vim.keymap.set({ "n", "v" }, "<leader>le", vim.lsp.buf.references, { desc = "references" })
 vim.keymap.set({ "n", "v" }, "<leader>ls", "<cmd>LspRestart<CR>", { desc = "restart" })
-vim.keymap.set({ "n", "v" }, "<leader>lf", function() vim.lsp.buf.format({ async = true }) end, { desc = "format" })
+vim.keymap.set({ "n", "v" }, "<leader>lf", function()
+  vim.lsp.buf.format({ async = true })
+end, { desc = "format" })
 
 -- Completion
 -- mappings inside completions.lua
