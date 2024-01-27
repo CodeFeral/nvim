@@ -8,7 +8,7 @@ return {
   },
   config = function()
     require("neo-tree").setup({
-      close_if_last_window = true,
+      close_if_last_window = false,
       enable_normal_mode_for_inputs = true,
 
       filesystem = {
