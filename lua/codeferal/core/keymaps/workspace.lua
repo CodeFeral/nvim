@@ -12,7 +12,7 @@ vim.keymap.set({ "n", "v" }, "<leader>eq", "<cmd>Neotree close<CR>", { desc = "n
 vim.keymap.set({ "n", "v" }, "<leader>eg", "<cmd>Neotree git_status toggle float<CR>", { desc = "neotree git status" })
 
 -- Trouble
-vim.keymap.set({ "n", "v" }, "<leader>et", "<cmd>:Trouble<CR>", { desc = "trouble" })
+vim.keymap.set({ "n", "v" }, "<leader>er", "<cmd>:Trouble<CR>", { desc = "trouble errors" })
 
 -- Aerial
 vim.keymap.set({ "n", "v" }, "<leader>eaw", "<cmd>AerialOpen! left<CR>", { desc = "aerial open" })

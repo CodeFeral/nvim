@@ -14,6 +14,9 @@ vim.opt.swapfile = false
 vim.opt.relativenumber = true -- show relative line numbers
 vim.opt.number = true         -- show absolute line number on cursor (when relative number is on)
 
+-- show sign column
+-- vim.opt.signcolumn = "yes"
+
 -- tabs & identation
 vim.opt.tabstop = 2       -- 2 spaces for tabs
 vim.opt.shiftwidth = 2    -- 2 spaces for indent width
