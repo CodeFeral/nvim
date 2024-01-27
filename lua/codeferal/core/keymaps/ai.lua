@@ -1,0 +1,25 @@
+-- ChatGPT
+vim.keymap.set({ "n", "v" }, "<leader>cl", "<cmd>ChatGPTCompleteCode<CR>", { desc = "complete" })
+vim.keymap.set({ "n", "v" }, "<leader>cw", "<cmd>ChatGPT<CR>", { desc = "chatGPT" })
+vim.keymap.set({ "n", "v" }, "<leader>ca", "<cmd>ChatGPTActAs<CR>", { desc = "act as" })
+vim.keymap.set({ "n", "v" }, "<leader>ce", "<cmd>ChatGPTEditWithInstructions<CR>", { desc = "edit" })
+vim.keymap.set({ "n", "v" }, "<leader>ch", "<cmd>h ChatGPT<CR>", { desc = "help" })
+
+vim.keymap.set({ "n", "v" }, "<leader>cct", "<cmd>ChatGPTRun translate<CR>", { desc = "translate" })
+vim.keymap.set({ "n", "v" }, "<leader>ccg", "<cmd>ChatGPTRun grammar_correction<CR>", { desc = "grammar" })
+vim.keymap.set({ "n", "v" }, "<leader>cck", "<cmd>ChatGPTRun keywords<CR>", { desc = "keywords" })
+vim.keymap.set({ "n", "v" }, "<leader>ccd", "<cmd>ChatGPTRun docstring<CR>", { desc = "docstring" })
+vim.keymap.set({ "n", "v" }, "<leader>cca", "<cmd>ChatGPTRun add_tests<CR>", { desc = "add tests" })
+vim.keymap.set({ "n", "v" }, "<leader>cco", "<cmd>ChatGPTRun optimize_code<CR>", { desc = "optimize code" })
+vim.keymap.set({ "n", "v" }, "<leader>ccs", "<cmd>ChatGPTRun summarize<CR>", { desc = "summarize" })
+vim.keymap.set({ "n", "v" }, "<leader>ccf", "<cmd>ChatGPTRun fix_bugs<CR>", { desc = "fix bugs" })
+vim.keymap.set({ "n", "v" }, "<leader>ccx", "<cmd>ChatGPTRun explain_code<CR>", { desc = "explain code" })
+vim.keymap.set({ "n", "v" }, "<leader>ccr", "<cmd>ChatGPTRun roxygen_edit<CR>", { desc = "roxygen edit" })
+vim.keymap.set({ "n", "v" }, "<leader>ccl", "<cmd>ChatGPTRun code_readability_analysis<CR>", { desc = "code readability analysis" })
+
+-- Copilot
+vim.keymap.set({ "n", "v" }, "<leader>gc", "<cmd>Copilot<CR>", { desc = "copilot" })
+vim.keymap.set({ "n", "v" }, "<leader>gh", "<cmd>h Copilot<CR>", { desc = "copilot help" })
+vim.keymap.set({ "n", "v" }, "<leader>ge", "<cmd>Copilot enable<CR>", { desc = "copilot enable" })
+vim.keymap.set({ "n", "v" }, "<leader>gq", "<cmd>Copilot disable<CR>", { desc = "copilot disable" })
+vim.keymap.set({ "n", "v" }, "<leader>gs", "<cmd>Copilot status<CR>", { desc = "copilot status" })
