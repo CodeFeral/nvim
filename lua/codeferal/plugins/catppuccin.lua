@@ -5,16 +5,6 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			transparent_background = true,
-			-- integrations = {
-			-- 	aerial = true,
-			-- 	dashboard = true,
-			-- 	leap = true,
-			-- 	mason = true,
-			-- 	neotree = true,
-			-- 	notify = true,
-			-- 	lsp_trouble = true,
-			-- 	which_key = true,
-			-- },
 		})
 
 		vim.cmd.colorscheme("catppuccin")
