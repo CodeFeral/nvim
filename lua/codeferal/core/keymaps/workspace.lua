@@ -3,7 +3,7 @@
 
 -- terminal
 vim.api.nvim_set_keymap("t", "<C-Space>", "<C-\\><C-n>", { noremap = true })
-vim.keymap.set({ "n", "v" }, "<leader>t", "<cmd>terminal<CR>", { desc = "open terminal" })
+vim.keymap.set({ "n", "v" }, "<leader>es", "<cmd>terminal<CR>", { desc = "open terminal" })
 
 -- Neo-tree
 vim.keymap.set({ "n", "v" }, "<leader>ew", "<cmd>Neotree focus filesystem left reveal<CR>", { desc = "neotree open" })
