@@ -24,6 +24,8 @@ return {
         "lua_ls",
         "tsserver",
         "html",
+        "jsonls",
+        "cssls",
       },
 
       automatic_installation = false,

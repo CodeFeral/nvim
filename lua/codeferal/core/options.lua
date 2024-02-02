@@ -12,15 +12,16 @@ vim.opt.swapfile = false
 
 -- line numbers
 vim.opt.relativenumber = true -- show relative line numbers
-vim.opt.number = true         -- show absolute line number on cursor (when relative number is on)
+vim.opt.number = true -- show absolute line number on cursor (when relative number is on)
+vim.opt.signcolumn = "yes" -- show sign column
 
--- show sign column
--- vim.opt.signcolumn = "yes"
+-- folding
+vim.opt.foldmethod = "indent"
 
 -- tabs & identation
-vim.opt.tabstop = 2       -- 2 spaces for tabs
-vim.opt.shiftwidth = 2    -- 2 spaces for indent width
-vim.opt.expandtab = true  -- expand tab to spaces
+vim.opt.tabstop = 2 -- 2 spaces for tabs
+vim.opt.shiftwidth = 2 -- 2 spaces for indent width
+vim.opt.expandtab = true -- expand tab to spaces
 vim.opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
@@ -28,7 +29,7 @@ vim.opt.wrap = false
 
 -- search settings
 vim.opt.ignorecase = true -- ignore case when searching
-vim.opt.smartcase = true  -- if you include mixed case in your search, assumes you want case-sensitive
+vim.opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 -- split windows
 vim.opt.splitright = true -- split vertical window to the right
