@@ -15,6 +15,8 @@ require("lazy").setup({
   { import = "codeferal.plugins" },
   { import = "codeferal.plugins.treesitter" },
   { import = "codeferal.plugins.navigation" },
+  { import = "codeferal.plugins.writing" },
+  { import = "codeferal.plugins.cosmetic" },
   { import = "codeferal.plugins.lsp" },
   -- { import = "codeferal.plugins.ai" },
 })
