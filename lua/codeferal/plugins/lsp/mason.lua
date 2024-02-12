@@ -1,34 +1,34 @@
 return {
-  "williamboman/mason.nvim",
+	"williamboman/mason.nvim",
 
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-  },
+	dependencies = {
+		"williamboman/mason-lspconfig.nvim",
+	},
 
-  config = function()
-    local mason = require("mason")
-    local mason_lspconfig = require("mason-lspconfig")
+	config = function()
+		local mason = require("mason")
+		local mason_lspconfig = require("mason-lspconfig")
 
-    mason.setup({
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
-    })
+		mason.setup({
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		})
 
-    mason_lspconfig.setup({
-      ensure_installed = {
-        "lua_ls",
-        "tsserver",
-        "html",
-        "jsonls",
-        "cssls",
-      },
+		mason_lspconfig.setup({
+			ensure_installed = {
+				"lua_ls",
+				"tsserver",
+				"html",
+				"jsonls",
+				"cssls",
+			},
 
-      automatic_installation = false,
-    })
-  end,
+			automatic_installation = false,
+		})
+	end,
 }

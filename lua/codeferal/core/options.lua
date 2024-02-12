@@ -1,3 +1,5 @@
+local opt = vim.opt
+
 -- checkhealth
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
@@ -5,33 +7,37 @@ vim.g.loaded_perl_provider = 0
 vim.g.loaded_node_provider = 0
 
 -- clipboard
-vim.o.clipboard = "unnamedplus" -- use system clipboard as default register
+opt.clipboard = "unnamedplus" -- use system clipboard as default register
 
 -- turn off swapfile
-vim.opt.swapfile = false
+opt.swapfile = false
 
 -- line numbers
-vim.opt.relativenumber = false -- show relative line numbers
-vim.opt.number = true -- show absolute line number on cursor (when relative number is on)
--- vim.opt.signcolumn = "yes" -- show sign column
+opt.relativenumber = false -- show relative line numbers
+opt.number = false -- show absolute line number on cursor (when relative number is on)
+opt.signcolumn = "yes" -- show sign column
 
 -- folding
-vim.opt.foldmethod = "indent" -- folding method
-vim.opt.foldlevel = 999 -- prevent automatic folding
+opt.foldmethod = "indent" -- folding method
+opt.foldlevel = 999 -- prevent automatic folding
 
 -- tabs & identation
-vim.opt.tabstop = 2 -- 2 spaces for tabs
-vim.opt.shiftwidth = 2 -- 2 spaces for indent width
-vim.opt.expandtab = true -- expand tab to spaces
-vim.opt.autoindent = true -- copy indent from current line when starting new one
+opt.tabstop = 2 -- 2 spaces for tabs
+opt.shiftwidth = 2 -- 2 spaces for indent width
+opt.expandtab = true -- expand tab to spaces
+opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-vim.opt.wrap = false
+opt.wrap = false
 
 -- search settings
-vim.opt.ignorecase = true -- ignore case when searching
-vim.opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+opt.ignorecase = true -- ignore case when searching
+opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+opt.smartindent = true -- Insert indents automatically
 
 -- split windows
-vim.opt.splitright = true -- split vertical window to the right
-vim.opt.splitbelow = true -- split horizontal window to the bottom
+opt.splitright = true -- split vertical window to the right
+opt.splitbelow = true -- split horizontal window to the bottom
+
+-- test
+opt.termguicolors = true
