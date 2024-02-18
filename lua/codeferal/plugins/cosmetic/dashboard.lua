@@ -236,6 +236,10 @@ return {
 				"A foolish faith in authority is the worst enemy of the truth.",
 				"- Albert Einstein",
 			},
+			{
+				"Talents hits a target no one else can hit. Genius hits a target no one else can see.",
+				"- Schopenhauer",
+			},
 		}
 
 		-- Randomly select a quote
