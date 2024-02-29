@@ -1,28 +1,70 @@
 return {
-  "epwalsh/obsidian.nvim",
-  version = "*", -- recommended, use latest release instead of latest commit
-  lazy = true,
-  ft = "markdown",
-  -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
-  -- event = {
-  --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-  --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-  --   "BufReadPre path/to/my-vault/**.md",
-  --   "BufNewFile path/to/my-vault/**.md",
-  -- },
-  dependencies = {
-    -- Required.
-    "nvim-lua/plenary.nvim",
-  },
-  opts = {
-    workspaces = {
-      {
-        name = "personal",
-        path = "~/core/vault",
-      },
-    },
-    templates = {
-      subdir = "templates"
-    },
-  },
+	"epwalsh/obsidian.nvim",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+	},
+
+	version = "*",
+	lazy = true,
+	ft = "markdown",
+
+	config = function()
+		require("obsidian").setup({
+			dir = "~/core/vault",
+
+			notes_subdir = "nodes",
+
+			daily_notes = {
+				folder = "nodes/dailies",
+			},
+
+			mappings = {
+				["gf"] = {
+					action = function()
+						return require("obsidian").util.gf_passthrough()
+					end,
+					opts = { noremap = false, expr = true, buffer = true },
+				},
+			},
+
+			new_notes_location = "notes_subdir",
+
+			note_id_func = function(title)
+				return title
+			end,
+
+			preferred_link_style = "wiki",
+
+			disable_frontmatter = true,
+
+			templates = {
+				subdir = "templates",
+				date_format = "%Y-%m-%d",
+				time_format = "%H:%M",
+				substitutions = {},
+			},
+
+			picker = {
+				name = "telescope.nvim",
+			},
+
+			attachments = {
+				img_folder = "resources",
+				---@param client obsidian.Client
+				---@param path obsidian.Path
+				---@return string
+				img_text_func = function(client, path)
+					local link_path
+					local vault_relative_path = client:vault_relative_path(path)
+					if vault_relative_path ~= nil then
+						link_path = vault_relative_path
+					else
+						link_path = tostring(path)
+					end
+					local display_name = vim.fs.basename(link_path)
+					return string.format("![%s](%s)", display_name, link_path)
+				end,
+			},
+		})
+	end,
 }
