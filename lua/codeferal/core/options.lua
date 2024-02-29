@@ -41,3 +41,5 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- test
 opt.termguicolors = true
+
+opt.conceallevel = 1
