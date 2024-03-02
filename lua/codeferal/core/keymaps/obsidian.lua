@@ -16,4 +16,3 @@ vim.keymap.set({ "n", "v" }, "<leader>ob", "<cmd>ObsidianBacklinks<cr>", { desc 
 vim.keymap.set({ "n", "v" }, "<leader>oe", "<cmd>ObsidianExtractNote<cr>", { desc = "Extract Node" })
 
 vim.keymap.set({ "n", "v" }, "<leader>op", "<cmd>ObsidianPasteImg<cr>", { desc = "Paste Image" })
-
