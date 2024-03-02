@@ -39,7 +39,7 @@ opt.smartindent = true -- Insert indents automatically
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
--- test
+-- misc
 opt.termguicolors = true
 
-opt.conceallevel = 1
+opt.conceallevel = 0
